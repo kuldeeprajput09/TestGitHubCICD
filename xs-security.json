@@ -1,0 +1,21 @@
+{
+  "xsappname": "listreport",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+    "name":"$XSAPPNAME.Display",
+    "description":"UAA Display"
+    }
+
+],
+"role-templates": [
+    {
+        "name":"POC_LR_Role",
+        "description":"UAA POC_LR_ROLE",
+        "scope-references":[
+            "$XSAPPNAME.Display"
+        ]
+    }
+]
+}
